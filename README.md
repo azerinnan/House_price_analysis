@@ -37,9 +37,13 @@ This project focuses on analyzing residential house price trends across states i
 
 **1. Data Cleaning (Microsoft Excel)**
 
-- The original data was downloaded from Kaggle and needed some adjustments before starting the analysis.
-[Excel Raw Data](1_houseprice_data_raw.png)
- 
+The original data was downloaded from Kaggle and needed adjustments before starting the analysis.
+[IMAGE: HOUSE PRICE RAW DATA](1_houseprice_data_raw.png)
+
+- Start with capital letters for Township column
+- Add ID as unique identifier for each row
+- Added separators (,) to Median_Price and Median_PSF columns
+- Standardized rows of house types such as "Bungalow, Semi D" and "Semi D, Bungalow". [IMAGE: HOUSE TYPE ](2_house_type.png)
 
 
  
