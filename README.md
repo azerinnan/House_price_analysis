@@ -38,7 +38,7 @@ This project focuses on analyzing residential house price trends across states i
 **1. Data Cleaning (Microsoft Excel)**
 
 - The original data was downloaded from Kaggle and needed some adjustments before starting the analysis.
-[Excel Raw Data](images/1_houseprice_data_raw.png)
+[Excel Raw Data](1_houseprice_data_raw.png)
  
 
 
