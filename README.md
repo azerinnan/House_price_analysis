@@ -44,7 +44,7 @@ The original data was downloaded from Kaggle and needed adjustments before start
 - Add ID as unique identifier for each row
 - Added separators (,) to Median_Price and Median_PSF columns
 - Standardized rows of house types such as "Bungalow, Semi D" and "Semi D, Bungalow". ([IMAGE 2: HOUSE TYPE ](2_house_type.png)). 
-Used IF statement, VLOOKUP, XLOOKUP and TEXTJOIN ([IMAGE 3: HOUSE TYPE CLEANED](3_house_type_cleaned))
+Used IF statement, VLOOKUP, XLOOKUP and TEXTJOIN ([IMAGE 3: HOUSE TYPE CLEANED](3_house_type_cleaned.png))
 
 
  
