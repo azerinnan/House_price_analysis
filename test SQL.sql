@@ -1,2 +1,0 @@
-SELECT NOW()
-FROM test
