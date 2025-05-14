@@ -47,9 +47,9 @@ The original data was downloaded from Kaggle and needed adjustments before start
 
     *Before:*
     
-    <img src="2_house_type.png" width="60%"/> 
+    <img src="2_house_type.png" width="40%"/> 
 
     *After:*
 
-    <img src="3_house_type_cleaned.png" width="60%"/>
+    <img src="3_house_type_cleaned.png" width="40%"/>
 
