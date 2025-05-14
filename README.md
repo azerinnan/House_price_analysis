@@ -45,7 +45,11 @@ The original data was downloaded from Kaggle and needed adjustments before start
 - Added separators (,) to Median_Price and Median_PSF columns
 - Standardized rows of house type such as 'Bungalow, Semi D' and 'Semi D, Bungalow', used IF statement, VLOOKUP, XLOOKUP and TEXTJOIN. 
 
-    **Before:**![IMAGE 2: HOUSE TYPE ](2_house_type.png) 
-    **After:** ![IMAGE 3: HOUSE TYPE CLEANED](3_house_type_cleaned.png)
+    *Before:*
+    
+    <img src="2_house_type.png" width="60%"/> 
 
+    *After:*
+
+    <img src="3_house_type_cleaned.png" width="60%"/>
 
