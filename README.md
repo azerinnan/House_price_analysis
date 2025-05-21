@@ -86,7 +86,7 @@ Insights:
 ### `OBJECTIVE 2` : Over price and under price of house by states
 
 ```sql
--- determine over price state
+-- determine over price states
 WITH overprice AS (
 	SELECT state, MAX(median_price) AS max_price
 	FROM houseprice
@@ -109,7 +109,7 @@ ORDER BY max_price DESC
 Insights:
 
 - Kuala Lumpur holds the highest median price at RM 5.46 million, surpassing Johor and Kedah at RM 4.05 million and RM 3.71 million. High demand for premium properties is Kuala Lumpur which the central location of Malaysia's economic and commercial hub.
-- The lowest minimum median price recorded by Selangor at RM 27,049 followed by Sarawak at RM 35,000.. This could indicate the availability of low-cost housing unit or auctioned properties. 
+- The lowest minimum median price recorded by Selangor at RM 27,049 followed by Sarawak at RM 35,000. This could indicate the availability of low-cost housing unit or auctioned properties. 
 
 ---
 ### `OBJECTIVE 3` : Popular type of house based on transaction
@@ -158,7 +158,7 @@ ORDER BY tenure_percentage DESC;
 
 Insights: 
 
-- With 65.90 % freehold tenure is the highest tenure type as buyers seeking long-term investment and ownership security, as the buyer owns both the property and the land indefinitely.
+- With 65.90 % freehold tenure is the highest tenure type. Buyers seeking long-term investment and ownership security, as the buyer owns both the property and the land indefinitely.
 ---
 
 
