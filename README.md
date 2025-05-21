@@ -54,14 +54,14 @@ The original data was downloaded from Kaggle and needed adjustments before start
     <img src="3_house_type_cleaned.png" width="40%"/>
 
 
-Cleaned data as per shown below and as per link : [HOUSE PRICE DATA CLEANED](C:\Git\draft_house_price\houseprice_data_cleaned.xlsx)
+Cleaned data as per shown below and as per link : [HOUSE PRICE DATA CLEANED](C:\Git\draft_house_price\house_price_data_cleaned.xlsx)
 ![IMAGE 4: HOUSE PRICE DATA CLEANED](4_houseprice_data_cleaned.png)
 
 ## Data Analysis (SQL)
 
 ### `OBJECTIVE 1` : Compare the average median price by state in Malaysia
 
-```sql
+```sql_
 SELECT
     state,
     ROUND(AVG(median_price),2) AS avg_median_price
