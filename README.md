@@ -4,16 +4,19 @@
 This project focuses on analyzing property market across states in Malaysia, using real-world data to simulate business-style reporting and geographical property insights. The purpose is to gain hands-on experience in data cleaning, SQL querying and building interactive Power BI dashboards for data storytelling.
 
 ## Objectives
-- Compare the average median price by state in Malaysia.
-- Over price and under price of house by states.
-- Popular type of house based on buying transactions.
-- Percentage of tenure of property.
+- Compare the average median property price by state in Malaysia
+
+- Identify overpriced and underpriced properties by state
+
+- Determine the most popular types of houses based on transaction volume
+
+- Analyze the percentage distribution of property tenure types
 
 ## Data Source
 - Dataset Name: House Prices in Malaysia (2025)
 - Source: Kaggle
 - Data Format: CSV
-- Download Link: [house price in malaysia 2025](https://www.kaggle.com/datasets/lyhatt/house-prices-in-malaysia-2025/data)
+- Download Link: [*House Prices in Malaysia 2025 (Kaggle)*](https://www.kaggle.com/datasets/lyhatt/house-prices-in-malaysia-2025/data)
 
     | **Variable**     | **Description**                                                                 |
     |------------------|----------------------------------------------------------------------------------|
@@ -22,7 +25,7 @@ This project focuses on analyzing property market across states in Malaysia, usi
     | `State`          | The state in Malaysia where the house is located. |
     | `Tenure`         | Type of ownership (Freehold or Leasehold).                       |
     | `Type`           | Classification of the house.      |
-    | `Median_Price`   | The median price of house within the location.       |
+    | `Median_Price`   | Median property price within the specified location.       |
     | `Median_PSF`     | The median price per square foot for the house.         |
     | `Transactions`   | Total number of recorded property transactions in the specified area or township.|
 
@@ -31,35 +34,35 @@ This project focuses on analyzing property market across states in Malaysia, usi
 |-----------------------------|----------------------------------------|---------------------------------------------------------------------------------|
 |Data Cleaning  | Microsoft Excel         | Cleaned raw dataset by proper and standardized the data and formatting columns. |
 |Data Analysis  | SQL             | Queried cleaned dataset to perform aggregations and comparisons. |
-|Data Visualization | Power BI                | Created interactive dashboards to display key trends and comparisons.          |
+|Data Visualization | Power BI                | Created interactive dashboards to display key insights and comparisons.          |
 
 
-## Data Cleaning (Microsoft Excel)
+ 
 
-The original data was downloaded from Kaggle and needed adjustments before starting the analysis.
+The original data was downloaded from Kaggle and required multiple cleaning steps before meaningful analysis could be performed.
 ![IMAGE 1: HOUSE PRICE RAW DATA](1_houseprice_data_raw.png)
 
-- Changed Township column to title case on each word
-- Added ID as unique identifier for each row
-- Added separators (,) to Median_Price and Median_PSF columns
-- Changed the column name to small letter
-- Standardized rows of house type such as 'Bungalow, Semi D' and 'Semi D, Bungalow'. Used IF statement, VLOOKUP, XLOOKUP and TEXTJOIN. 
+- Converted values in the Township column to title case for consistent formating.
+- Added a unique ID column to serve as a row identifier
+- Formatted Median_Price and Median_PSF columns with comma separators for better readability
+- Renamed all column headers to lowercase for consistency
+- Standardized inconsistent entries in the Type column (e.g., “Bungalow, Semi D” vs. “Semi D, Bungalow”) using formulas such as IF, VLOOKUP, XLOOKUP, and TEXTJOIN 
 
-    *Before:*
+    *Before Cleaning:*
     
     <img src="2_house_type.png" width="40%"/> 
 
-    *After:*
+    *After Cleaning:*
 
     <img src="3_house_type_cleaned.png" width="40%"/>
 
 
-Cleaned data as per shown below and as per link : [HOUSE PRICE DATA CLEANED](https://github.com/azerinnan/draft_house_price/blob/main/house_price_data_cleaned.xlsx)
+The final cleaned dataset is displayed below and can be accessed here: [*House Price Data Cleaned*](https://github.com/azerinnan/draft_house_price/blob/main/house_price_data_cleaned.xlsx)
 ![IMAGE 4: HOUSE PRICE DATA CLEANED](4_houseprice_data_cleaned.png)
 
 ## Data Analysis (SQL)
 
-### `OBJECTIVE 1` : Compare the average median price by state in Malaysia
+### `OBJECTIVE 1` : Compare the average median house price by state in Malaysia
 
 ```sql_
 SELECT
@@ -73,27 +76,27 @@ Insights:
 
 - Labuan shows the highest average median house price at RM 1.08 million, but this is likely skewed due to having the only one township in the property market.
     
-- Top 3 states with relatively high average median prices (excluding Labuan) are :
-    -   Kelantan (RM 0.76 million)
-    -   Perlis (RM 0.62 million)
+- Top 3 states with relatively high average median prices (excluding Labuan):
+    -   Kelantan - RM 0.76 million
+    -   Perlis - RM 0.62 million
     -   Sarawak (RM 0.53 million)
 
-- Most affordable states with low average median price are:
-    -   Terengganu (RM 0.33 million)
-    -   Putrajaya (RM 0.40 million)
+- Most affordable states based on average median price are:
+    -   Terengganu - RM 0.33 million 
+    -   Putrajaya - RM 0.40 million
 
 ---
-### `OBJECTIVE 2` : Over price and under price of house by states
+### `OBJECTIVE 2` : Identify states with the highest (overpriced) and lowest (underpriced) median house prices.
 
 ```sql
--- determine over price states
+-- Determine overpriced states (highest median price per state)
 WITH overprice AS (
 	SELECT state, MAX(median_price) AS max_price
 	FROM houseprice
 	GROUP BY state
 ),
 
--- determine under price states
+-- Determine underpriced states lowest median price per state)
 underprice AS (
 	SELECT state, MIN(median_price) AS min_price
 	FROM houseprice
@@ -107,12 +110,16 @@ ON o.state = u.state
 ORDER BY max_price DESC
 ```
 Insights:
-
-- Kuala Lumpur holds the highest median price at RM 5.46 million, surpassing Johor and Kedah at RM 4.05 million and RM 3.71 million. High demand for premium properties is Kuala Lumpur which the central location of Malaysia's economic and commercial hub.
-- The lowest minimum median price recorded by Selangor at RM 27,049 followed by Sarawak at RM 35,000. This could indicate the availability of low-cost housing unit or auctioned properties. 
+- Overpriced States (Highest Median Prices)
+	- Kuala Lumpur - RM 5.46 million 
+	- Johor - RM 4.05 million
+	- Kedah - RM 3.71 million.
+	
+	High demand for premium properties is Kuala Lumpur which the central location of Malaysia's economic and commercial hub. Johor's location near Singapore and ongoing development projects in Kedah may also contribute to the rising house prices in these states.
+- The lowest minimum median price recorded by Selangor at RM 27,049 followed by Sarawak at RM 35,000. This could indicate the availability of low-cost housing unit or auctioned properties within these states. It could also reflect lower demand or less developed in certain areas.
 
 ---
-### `OBJECTIVE 3` : Popular type of house based on transaction
+### `OBJECTIVE 3` : Identify the most popular type of house based on transactions
 
 ```sql
 WITH ranktype AS (
@@ -139,9 +146,9 @@ ORDER BY transactions DESC, type ASC;
 ```
 Insights: 
 
-- The 'Bungalow' is the most popular type of house in the property market, with 593 transactions recorded in Bandar Tasik Senangin, Lenggeng, Negeri Sembilan 
-and followed by 'Bungalow & Terrace House' with 363 transactions, located in Bukit Sentosa, Serendah, Selangor.
-- These locations, situated away from the busy city, offers a peaceful environment that appeals to buyers.
+- The **Bungalow** is the most popular type of house in the property market, with **593 transactions** recorded in Bandar Tasik Senangin, Lenggeng, Negeri Sembilan.
+- It is followed by **Bungalow & Terrace House** with **363 transactions**, located in Bukit Sentosa, Serendah, Selangor.
+- These areas are located outside major urban centers, offering a quieter and more spacious living environment. This may appeal to buyers looking for peaceful surroundings, larger land size, or more affordable detached housing options compared to properties in city centers.
 
 ---
 ### `OBJECTIVE 4` : Percentage of tenure
@@ -157,8 +164,14 @@ ORDER BY tenure_percentage DESC;
 ```
 
 Insights: 
-
-- With 65.90 % freehold tenure is the highest tenure type. Buyers seeking long-term investment and ownership security, as the buyer owns both the property and the land indefinitely.
+- The majority of properties (65.90%) are categorized as Freehold, making it the most common tenure type
+- Freehold properties grant buyers owns both the property and the land indefinitely. This tenure type is preferred by buyers seeking long-term investment stability and control over property without concerns of lease expiration.
 ---
+## Data Visualization (Power BI)
+After completing data cleaning and analysis, used Power BI to tranform the processed data into an interactive dashboard. It highlights median price comparisons by state, tenure types, housing type distributions and transactions.
+
+### Dashboard Preview
+
+(5_dashboard_houseprice.png)
 
 
