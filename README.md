@@ -172,6 +172,6 @@ After completing data cleaning and analysis, used Power BI to tranform the proce
 
 ### Dashboard Preview
 
-![House Price Dashboard](5_dashboard_houseprice.png)
+![House Price Dashboard](5_houseprice_dashboard.png)
 
 
