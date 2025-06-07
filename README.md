@@ -174,4 +174,22 @@ After completing data cleaning and analysis, used Power BI to tranform the proce
 
 ![House Price Dashboard](5_houseprice_dashboard.png)
 
+### Key Visuals and Features
+- Slicer - State in Malaysia
 
+	Filter all visual by state to compare house prices and transaction
+
+- Cards - Summary statistics
+	
+	Displays average, minimum and maximum median house price based on selected states
+
+- Filled map - State in Malaysia
+	
+	Shows transaction in property market by state
+- Table - Type of house
+
+	Details of popular type of house in certain cities with number of transactions
+
+- Pie chart - Tenure type
+
+	Percentage of tenure type in Malaysia
