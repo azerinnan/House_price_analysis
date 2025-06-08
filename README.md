@@ -173,23 +173,31 @@ After completing data cleaning and analysis, used Power BI to tranform the proce
 ### Dashboard Preview
 
 ![House Price Dashboard](5_houseprice_dashboard.png)
+The House Price 20205 Analysis dashboard can be accessed here: [*House Price 2025 Analysis Dashboard*](https://github.com/azerinnan/draft_house_price/blob/main/house_price_data_cleaned.xlsx)
+
 
 ### Key Visuals and Features
 - Slicer - State in Malaysia
 
-	Filter all visual by state to compare house prices and transaction
+	Filter all visual by state to compare house prices and transactions volumes.
 
 - Cards - Summary statistics
 	
-	Displays average, minimum and maximum median house price based on selected states
+	Displays average, minimum and maximum median house price based on selected states.
 
 - Filled map - State in Malaysia
 	
-	Shows transaction in property market by state
-- Table - Type of house
+	Visualizes property market transactions by state across Malaysia.
+- Table – Popular house types by city and state
 
-	Details of popular type of house in certain cities with number of transactions
+	Shows the most common house type in selected cities, along with the state and number of transactions. Only cities with a clear top house type are included. Some states may not appear if no house type is clearly more popular than others.
 
 - Pie chart - Tenure type
 
-	Percentage of tenure type in Malaysia
+	Shows the percentage distribution of tenure types in Malaysia.
+
+### Insights Highlighted
+- Freehold is the dominant tenure type with 65.9% of the dataset.
+- The average median house price in Malaysia is RM 540.85 K.
+- Bungalows in Negeri Sembilan are the most transacted house type, with 593 transactions recorded.
+- Kuala Lumpur and Johor have the highest median house price in Malaysian property market.
