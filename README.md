@@ -173,26 +173,27 @@ After completing data cleaning and analysis, used Power BI to tranform the proce
 ### Dashboard Preview
 
 ![House Price Dashboard](5_houseprice_dashboard.png)
-The House Price 20205 Analysis dashboard can be accessed here: [*House Price 2025 Analysis Dashboard*](https://github.com/azerinnan/draft_house_price/blob/main/house_price_data_cleaned.xlsx)
+The House Price 20205 Analysis dashboard can be accessed here: [*House Price 2025 Analysis Dashboard*](https://github.com/azerinnan/draft_house_price/blob/main/6_houseprice_analysis_dashboard.pbix)
 
 
 ### Key Visuals and Features
-- Slicer - State in Malaysia
+- **Slicer - State in Malaysia**
 
 	Filter all visual by state to compare house prices and transactions volumes.
 
-- Cards - Summary statistics
+- **Cards - Summary statistics**
 	
 	Displays average, minimum and maximum median house price based on selected states.
 
-- Filled map - State in Malaysia
+- **Filled map - State in Malaysia**
 	
 	Visualizes property market transactions by state across Malaysia.
-- Table – Popular house types by city and state
+
+- **Table – Popular house types by city and state**
 
 	Shows the most common house type in selected cities, along with the state and number of transactions. Only cities with a clear top house type are included. Some states may not appear if no house type is clearly more popular than others.
 
-- Pie chart - Tenure type
+- **Pie chart - Tenure type**
 
 	Shows the percentage distribution of tenure types in Malaysia.
 
