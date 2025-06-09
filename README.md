@@ -96,7 +96,7 @@ WITH overprice AS (
 	GROUP BY state
 ),
 
--- Determine underpriced states lowest median price per state)
+-- Determine underpriced states (lowest median price per state)
 underprice AS (
 	SELECT state, MIN(median_price) AS min_price
 	FROM houseprice
