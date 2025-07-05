@@ -58,7 +58,10 @@ The original data is downloaded from Kaggle and required multiple cleaning steps
     <img src="3_house_type_cleaned.png" width="40%"/>
 
 
-The final cleaned dataset is displayed below and can be accessed here: [*House Price Data Cleaned*](https://github.com/azerinnan/draft_house_price/blob/main/house_price_data_cleaned.xlsx)
+
+The final cleaned dataset is displayed below and can be accessed here:
+[*House Price Data Cleaned*](https://github.com/azerinnan/draft_house_price/blob/main/house_price_data_cleaned.xlsx)
+
 ![IMAGE 4: HOUSE PRICE DATA CLEANED](4_houseprice_data_cleaned.png)
 
 ## Data Analysis (SQL)
