@@ -1,16 +1,16 @@
 # House Price Analysis
 
 ## Project Overview
-This project focuses on analyzing property market across states in Malaysia, using real-world data to simulate business-style reporting and geographical property insights. The purpose is to gain hands-on experience in data cleaning, SQL querying and building interactive Power BI dashboards for data storytelling.
+This project focuses on analyzing property market across states in Malaysia, using real-world data to simulate business-style reporting and geographical property insights. The purpose is to gain hands-on experience in data cleaning, SQL querying, and building interactive Power BI dashboards for data storytelling.
 
 ## Objectives
-- Compare the average median property price by state in Malaysia
+- Compare average median property prices by state in Malaysia.
 
-- Identify overpriced and underpriced properties by state
+- Identify overpriced and underpriced properties by state.
 
-- Determine the most popular types of houses based on transaction volume
+- Determine the most popular house type based on transaction volume.
 
-- Analyze the percentage distribution of property tenure types
+- Analyze the percentage distribution of property tenure types.
 
 ## Data Source
 - Dataset Name: House Prices in Malaysia (2025)
@@ -32,21 +32,22 @@ This project focuses on analyzing property market across states in Malaysia, usi
 ## Tools & Workflow
 | **Step**                  |**Tool Used**        | **Description**                                                                 |
 |-----------------------------|----------------------------------------|---------------------------------------------------------------------------------|
-|Data Cleaning  | Microsoft Excel         | Cleaned raw dataset by proper and standardized the data and formatting columns. |
-|Data Analysis  | SQL             | Queried cleaned dataset to perform aggregations and comparisons. |
+|Data Cleaning  | Microsoft Excel         | Cleaned and standardized the dataset and format columns consistently. |
+|Data Analysis  | SQL             | Query the cleaned dataset to perform aggregations and comparisons. |
 |Data Visualization | Power BI                | Created interactive dashboards to display key insights and comparisons.          |
 
 
- 
 
-The original data was downloaded from Kaggle and required multiple cleaning steps before meaningful analysis could be performed.
+## Data Cleaning (Microsoft Excel)
+
+The original data is downloaded from Kaggle and required multiple cleaning steps before meaningful analysis could be performed.
 ![IMAGE 1: HOUSE PRICE RAW DATA](1_houseprice_data_raw.png)
 
-- Converted values in the Township column to title case for consistent formating.
-- Added a unique ID column to serve as a row identifier
-- Formatted Median_Price and Median_PSF columns with comma separators for better readability
-- Renamed all column headers to lowercase for consistency
-- Standardized inconsistent entries in the Type column (e.g., “Bungalow, Semi D” vs. “Semi D, Bungalow”) using formulas such as IF, VLOOKUP, XLOOKUP, and TEXTJOIN 
+- Convert values in the `Township` column to title case for consistent formatting.
+- Add a unique ID column to serve as a row identifier.
+- Formatted `Median_Price` and `Median_PSF` columns with comma separators for better readability
+- Renamed all column headers to lowercase for consistency.
+- Standardize inconsistent entries in the `Type` column (e.g., “Bungalow, Semi D” vs. “Semi D, Bungalow”) using Excel functions such as IF, VLOOKUP, XLOOKUP, and TEXTJOIN. 
 
     *Before Cleaning:*
     
@@ -74,7 +75,7 @@ ORDER BY avg_median_price DESC;
 ```
 Insights:
 
-- Labuan shows the highest average median house price at RM 1.08 million, but this is likely skewed due to having the only one township in the property market.
+- Labuan shows the highest average median house price at RM 1.08 million, likely skewed due to having the only one township in the property market.
     
 - Top 3 states with relatively high average median prices (excluding Labuan):
     -   Kelantan - RM 0.76 million
