@@ -107,7 +107,7 @@ WITH overprice AS (
 underprice AS (
 	SELECT state, MIN(median_price) AS min_price
 	FROM houseprice
-	GROUP BY state;
+	GROUP BY state
 )
 
 SELECT o.state, o.max_price, u.min_price
@@ -122,8 +122,8 @@ Insights:
 	- Johor - RM 4.05 million
 	- Kedah - RM 3.71 million.
 	
-	High demand for premium properties is Kuala Lumpur which the central location of Malaysia's economic and commercial hub. Johor's location near Singapore and ongoing development projects in Kedah may also contribute to the rising house prices in these states.
-- The lowest minimum median price recorded by Selangor at RM 27,049 followed by Sarawak at RM 35,000. This could indicate the availability of low-cost housing unit or auctioned properties within these states. It could also reflect lower demand or less developed in certain areas.
+	The high demand for premium properties in Kuala Lumpur due to its position as the central location of Malaysia's economic and commercial hub. Johor's location near Singapore and ongoing development projects in Kedah may also contribute to the rising house prices in these states.
+- The lowest minimum median price id recorded in Selangor at RM 27,049 followed by Sarawak at RM 35,000. This could indicate the availability of low-cost housing unit or auctioned properties within these states. It could also reflect lower demand or less developed in certain areas.
 
 ---
 ### `OBJECTIVE 3` : Identify the most popular type of house based on transactions
@@ -153,8 +153,8 @@ ORDER BY transactions DESC, type ASC;
 ```
 Insights: 
 
-- The **Bungalow** is the most popular type of house in the property market, with **593 transactions** recorded in Bandar Tasik Senangin, Lenggeng, Negeri Sembilan.
-- It is followed by **Bungalow & Terrace House** with **363 transactions**, located in Bukit Sentosa, Serendah, Selangor.
+- The **Bungalow** is the most popular type of house in the property market, with **593 transactions** in Bandar Tasik Senangin, Lenggeng, Negeri Sembilan.
+- It is followed by **Bungalow & Terrace House** with **363 transactions** in Bukit Sentosa, Serendah, Selangor.
 - These areas are located outside major urban centers, offering a quieter and more spacious living environment. This may appeal to buyers looking for peaceful surroundings, larger land size, or more affordable detached housing options compared to properties in city centers.
 
 ---
@@ -171,9 +171,10 @@ ORDER BY tenure_percentage DESC;
 ```
 
 Insights: 
-- The majority of properties (65.90%) are categorized as Freehold, making it the most common tenure type
-- Freehold properties grant buyers owns both the property and the land indefinitely. This tenure type is preferred by buyers seeking long-term investment stability and control over property without concerns of lease expiration.
+- The majority of properties (65.90%) are categorized as Freehold, making it the most common tenure type.
+- Freehold properties grant buyers ownership of both the property and the land indefinitely. This tenure type is preferred by buyers seeking long-term investment stability and control over property without concerns about lease expiration.
 ---
+
 ## Data Visualization (Power BI)
 After completing data cleaning and analysis, used Power BI to tranform the processed data into an interactive dashboard. It highlights median price comparisons by state, tenure types, housing type distributions and transactions.
 
