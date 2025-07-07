@@ -122,8 +122,8 @@ Insights:
 	- Johor - RM 4.05 million
 	- Kedah - RM 3.71 million.
 	
-	The high demand for premium properties in Kuala Lumpur due to its position as the central location of Malaysia's economic and commercial hub. Johor's location near Singapore and ongoing development projects in Kedah may also contribute to the rising house prices in these states.
-- The lowest minimum median price id recorded in Selangor at RM 27,049 followed by Sarawak at RM 35,000. This could indicate the availability of low-cost housing unit or auctioned properties within these states. It could also reflect lower demand or less developed in certain areas.
+	The high demand for premium properties in Kuala Lumpur is due to its position as the central location of Malaysia's economic and commercial hub. Johor's location near Singapore and ongoing development projects in Kedah may also contribute to the rising house prices in these states.
+- The lowest minimum median price id recorded in Selangor at RM 27,049 followed by Sarawak at RM 35,000. This could indicate the availability of low-cost housing units or auctioned properties within these states. It could also reflect lower demand or less-developed in certain part of these states.
 
 ---
 ### `OBJECTIVE 3` : Identify the most popular type of house based on transactions
@@ -154,8 +154,8 @@ ORDER BY transactions DESC, type ASC;
 Insights: 
 
 - The **Bungalow** is the most popular type of house in the property market, with **593 transactions** in Bandar Tasik Senangin, Lenggeng, Negeri Sembilan.
-- It is followed by **Bungalow & Terrace House** with **363 transactions** in Bukit Sentosa, Serendah, Selangor.
-- These areas are located outside major urban centers, offering a quieter and more spacious living environment. This may appeal to buyers looking for peaceful surroundings, larger land size, or more affordable detached housing options compared to properties in city centers.
+- It is followed by **Bungalow & Terrace House** type with **363 transactions** in Bukit Sentosa, Serendah, Selangor.
+- These areas are located outside major urban centers, offering a quieter and more spacious living environment. This may appeal to buyers looking for peaceful surroundings, larger land sizes, or more affordable detached housing options compared to properties in city centers.
 
 ---
 ### `OBJECTIVE 4` : Percentage of tenure
@@ -171,17 +171,17 @@ ORDER BY tenure_percentage DESC;
 ```
 
 Insights: 
-- The majority of properties (65.90%) are categorized as Freehold, making it the most common tenure type.
-- Freehold properties grant buyers ownership of both the property and the land indefinitely. This tenure type is preferred by buyers seeking long-term investment stability and control over property without concerns about lease expiration.
+- The majority of properties (**65.90%**) are categorized as **Freehold**, making it the most common tenure type.
+- Freehold properties grant buyers ownership of both the property and the land indefinitely. This tenure type is preferred by buyers seeking long-term investment stability and control over their property without concerns about lease expiration.
 ---
 
 ## Data Visualization (Power BI)
-After completing data cleaning and analysis, used Power BI to tranform the processed data into an interactive dashboard. It highlights median price comparisons by state, tenure types, housing type distributions and transactions.
+After completing data cleaning and analysis, Power BI is used to transform the processed data into an interactive dashboard that highlights median price comparisons by state, tenure types, housing type distributions, and transactions.
 
 ### Dashboard Preview
 
 ![House Price Dashboard](5_houseprice_dashboard.png)
-The House Price 20205 Analysis dashboard can be accessed here: [*House Price 2025 Analysis Dashboard*](https://github.com/azerinnan/draft_house_price/blob/main/6_houseprice_analysis_dashboard.pbix)
+View the House Price 2025 Analysis here: [*House Price 2025 Analysis Dashboard*](https://github.com/azerinnan/draft_house_price/blob/main/6_houseprice_analysis_dashboard.pbix)
 
 
 ### Key Visuals and Features
@@ -191,15 +191,15 @@ The House Price 20205 Analysis dashboard can be accessed here: [*House Price 202
 
 - **Cards - Summary statistics**
 	
-	Displays average, minimum and maximum median house price based on selected states.
+	Displays the average, minimum and maximum median house price based on selected states.
 
 - **Filled map - State in Malaysia**
 	
 	Visualizes property market transactions by state across Malaysia.
 
-- **Table – Popular house types by city and state**
-
-	Shows the most common house type in selected cities, along with the state and number of transactions. Only cities with a clear top house type are included. Some states may not appear if no house type is clearly more popular than others.
+- **Table – Popular house types**
+	
+	Displays each most popular house type along with its top location (city and state) and the number of transactions. Only the top location for each house type is shown.
 
 - **Pie chart - Tenure type**
 
@@ -207,6 +207,6 @@ The House Price 20205 Analysis dashboard can be accessed here: [*House Price 202
 
 ### Insights Highlighted
 - Freehold is the dominant tenure type with 65.9% of the dataset.
-- The average median house price in Malaysia is RM 540.85 K.
+- The average median house price in Malaysia is RM 540,850.
 - Bungalows in Negeri Sembilan are the most transacted house type, with 593 transactions recorded.
-- Kuala Lumpur and Johor have the highest median house price in Malaysian property market.
+- Kuala Lumpur and Johor have the highest median house prices in the Malaysian property market.
