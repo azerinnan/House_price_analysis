@@ -190,7 +190,7 @@ View the House Price 2025 Analysis here: [*House Price 2025 Analysis Dashboard*]
 
 
 ### Key Visuals and Features
-- **Slicer - State in Malaysia**
+- **Slicer - States in Malaysia**
 
 	Filter all visual by state to compare house prices and transactions volumes.
 
@@ -198,7 +198,7 @@ View the House Price 2025 Analysis here: [*House Price 2025 Analysis Dashboard*]
 	
 	Displays the average, minimum and maximum median house price based on selected states.
 
-- **Filled map - State in Malaysia**
+- **Filled map - Transaction by states**
 	
 	Visualizes property market transactions by state across Malaysia.
 
