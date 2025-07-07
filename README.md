@@ -32,7 +32,7 @@ This project focuses on analyzing property market across states in Malaysia, usi
 ## Tools & Workflow
 | **Step**                  |**Tool Used**        | **Description**                                                                 |
 |-----------------------------|----------------------------------------|---------------------------------------------------------------------------------|
-|Data Cleaning  | Microsoft Excel         | Clean and standardiz the dataset and format columns consistently. |
+|Data Cleaning  | Microsoft Excel         | Clean and standardize the dataset and format columns consistently. |
 |Data Analysis  | SQL             | Query the cleaned dataset to perform aggregations and comparisons. |
 |Data Visualization | Power BI                | Create interactive dashboards to display key insights and comparisons.          |
 
@@ -121,7 +121,7 @@ Insights:
 - Overpriced States (Highest Median Prices)
 	- Kuala Lumpur - RM 5.46 million 
 	- Johor - RM 4.05 million
-	- Kedah - RM 3.71 million.
+	- Kedah - RM 3.71 million
 	
 	The high demand for premium properties in Kuala Lumpur is due to its position as the central location of Malaysia's economic and commercial hub. Johor's location near Singapore and ongoing development projects in Kedah may also contribute to the rising house prices in these states.
 - The lowest minimum median price id recorded in Selangor at RM 27,049 followed by Sarawak at RM 35,000. This could indicate the availability of low-cost housing units or auctioned properties within these states. It could also reflect lower demand or less-developed in certain part of these states.
