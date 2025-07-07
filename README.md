@@ -72,6 +72,7 @@ The final cleaned dataset is displayed below and can be accessed here:
 ### `OBJECTIVE 1` : Compare the average median house price by state in Malaysia
 
 ```sql
+-- Determine average median price by state
 SELECT
     state,
     ROUND(AVG(median_price),2) AS avg_median_price
@@ -86,7 +87,7 @@ Insights:
 - Top 3 states with relatively high average median prices (excluding Labuan):
     -   Kelantan - RM 0.76 million
     -   Perlis - RM 0.62 million
-    -   Sarawak (RM 0.53 million)
+    -   Sarawak - RM 0.53 million
 
 - Most affordable states based on average median price are:
     -   Terengganu - RM 0.33 million 
@@ -129,6 +130,7 @@ Insights:
 ### `OBJECTIVE 3` : Identify the most popular type of house based on transactions
 
 ```sql
+-- Create a ranked list for each house type based on highest transaction counts
 WITH ranktype AS (
 		SELECT 
 			type,
@@ -140,7 +142,8 @@ WITH ranktype AS (
             ORDER BY transactions DESC) AS highest_transaction
 		FROM houseprice
 		)
-	
+
+-- Select the top location (city and state) for each house type based on the highest number of transactions
 SELECT 
 	type,
 	township,
@@ -160,6 +163,7 @@ Insights:
 ---
 ### `OBJECTIVE 4` : Percentage of tenure
 ```SQL
+-- Calculate the count and percentage distribution of selected tenure types
 SELECT
 	tenure, 
 	COUNT(*) AS count_per_tenure,
@@ -181,6 +185,7 @@ After completing data cleaning and analysis, Power BI is used to transform the p
 ### Dashboard Preview
 
 ![House Price Dashboard](5_houseprice_dashboard.png)
+
 View the House Price 2025 Analysis here: [*House Price 2025 Analysis Dashboard*](https://github.com/azerinnan/draft_house_price/blob/main/6_houseprice_analysis_dashboard.pbix)
 
 
