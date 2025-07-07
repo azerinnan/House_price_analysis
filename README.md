@@ -71,7 +71,7 @@ The final cleaned dataset is displayed below and can be accessed here:
 
 ### `OBJECTIVE 1` : Compare the average median house price by state in Malaysia
 
-```sql_
+```sql
 SELECT
     state,
     ROUND(AVG(median_price),2) AS avg_median_price
