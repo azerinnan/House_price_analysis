@@ -43,10 +43,10 @@ This project focuses on analyzing property market across states in Malaysia, usi
 The original data is downloaded from Kaggle and required multiple cleaning steps before meaningful analysis could be performed.
 ![IMAGE 1: HOUSE PRICE RAW DATA](1_houseprice_data_raw.png)
 
-- Convert `Township` column to title case for consistent formatting.
+- Convert the `Township` column to title case for consistent formatting.
 - Add a unique ID column to serve as a row identifier.
-- Formatted `Median_Price` and `Median_PSF` columns with comma separators for better readability
-- Renamed all column headers to lowercase for consistency.
+- Format the `Median_Price` and `Median_PSF` columns with comma separators for better readability.
+- Rename all column headers to lowercase for consistency.
 - Standardize inconsistent entries in the `Type` column (e.g., “Bungalow, Semi D” vs. “Semi D, Bungalow”) using Excel functions such as IF, VLOOKUP, XLOOKUP, and TEXTJOIN. 
 
     *Before Cleaning:*
