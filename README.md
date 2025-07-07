@@ -32,9 +32,9 @@ This project focuses on analyzing property market across states in Malaysia, usi
 ## Tools & Workflow
 | **Step**                  |**Tool Used**        | **Description**                                                                 |
 |-----------------------------|----------------------------------------|---------------------------------------------------------------------------------|
-|Data Cleaning  | Microsoft Excel         | Cleaned and standardized the dataset and format columns consistently. |
+|Data Cleaning  | Microsoft Excel         | Clean and standardiz the dataset and format columns consistently. |
 |Data Analysis  | SQL             | Query the cleaned dataset to perform aggregations and comparisons. |
-|Data Visualization | Power BI                | Created interactive dashboards to display key insights and comparisons.          |
+|Data Visualization | Power BI                | Create interactive dashboards to display key insights and comparisons.          |
 
 
 
